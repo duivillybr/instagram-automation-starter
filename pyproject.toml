@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instagram-automation-starter"
+version = "0.1.0"
+description = "Python starter for AI-assisted Instagram content preparation and publishing"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["instagram_automation*"]
+
+[project.scripts]
+instagram-automation = "instagram_automation.cli:main"

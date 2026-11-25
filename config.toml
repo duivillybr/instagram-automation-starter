@@ -1,0 +1,66 @@
+[project]
+name = "Your Project"
+handle = "@yourhandle"
+tagline = "YOUR CONTENT, IN CONTEXT"
+timezone = "America/Sao_Paulo"
+database = "data/publisher.sqlite3"
+output = "output"
+
+[schedule]
+collect_minutes = 15
+publish_minutes = 60
+daily_limit = 3
+start_hour = 8
+end_hour = 20
+poll_seconds = 30
+max_queue = 12
+prepare_per_tick = 3
+
+[publishing]
+dry_run = true
+require_approval = true
+login_mode = "unified"
+api_version = "v27.0"
+
+[editorial]
+max_age_hours = 72
+minimum_score = 5
+similarity_threshold = 0.78
+event_cooldown_hours = 24
+priority_regions = []
+blocked_terms = []
+required_terms = []
+hashtags = ["YourProject"]
+language = "pt-BR"
+
+[editorial.topics]
+updates = ["novidade", "atualização", "update", "announcement"]
+education = ["guia", "aprendizado", "dica", "tutorial", "learning", "how-to"]
+community = ["comunidade", "evento", "community", "event"]
+product = ["produto", "serviço", "recurso", "product", "feature"]
+
+[media]
+mode = "image"
+reel_every = 3
+use_feed_images = false
+require_source_image = false
+voice = "pt-BR-AntonioNeural"
+background_music_volume = 0.24
+background_music_file = "assets/audio/background-loop.wav"
+
+[ai]
+enabled = false
+provider = "openai"
+codex_binary = "codex"
+codex_model = "gpt-6-luna"
+model = "gpt-4.1-mini"
+minimum_relevance = 7
+
+# Optional RSS adapter example. Replace the URL/domains, then set enabled = true.
+[[feeds]]
+name = "Example feed"
+url = "https://example.com/feed.xml"
+domains = ["example.com"]
+media_domains = []
+weight = 1
+enabled = false
