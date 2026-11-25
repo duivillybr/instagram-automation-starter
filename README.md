@@ -6,10 +6,7 @@ Um ponto de partida em Python para preparar, revisar e agendar publicações em 
 
 ## Guia prático
 
-- [Guia em português](docs/instagram-automation-guide-pt.pdf)
-- [Practical guide in English](docs/instagram-automation-guide-en.pdf)
-
-Os guias cobrem arquitetura, IA, configuração, segurança, agendamento e implantação, usando um caso de implementação real como referência.
+O guia prático em português e inglês está disponível para download na conversa em que este starter foi preparado. Os PDFs não fazem parte deste repositório.
 
 ## Caso real
 
